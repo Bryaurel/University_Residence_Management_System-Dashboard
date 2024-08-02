@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Residence Management Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="mb-4">
+            <h1 class="text-center">University Residence Management Dashboard</h1>
+            <div class="form-group">
+                <label for="themeSwitcher">Select Theme:</label>
+                <select id="themeSwitcher" class="form-control">
+                    <option value="light">Light Theme</option>
+                    <option value="dark">Dark Theme</option>
+                </select>
+            </div>
+        </header>
+        <main>
+            <!-- Dashboard content will go here -->
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <canvas id="occupancyChart" width="400" height="200"></canvas>
+                </div>
+                <div class="col-md-6 mb-3"></div>
+                    <ul id="roomList" class="list-group"></ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <ul id="requestList" class="list-group"></ul>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <ul id="alertList" class="list-group"></ul>
+                </div>
+            </div>
+        </main>
+        <footer class="text-center mt-4">
+            <p>&copy; 2024 University Residence Management</p>
+        </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

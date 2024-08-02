@@ -1,0 +1,17 @@
+{
+    "rooms": [
+        { "id": 1, "resident": "John Doe", "status": "occupied", "amenities": "WiFi, AC" },
+        { "id": 2, "resident": "Jane Smith", "status": "vacant", "amenities": "WiFi" },
+        { "id": 3, "resident": "Michael Brown", "status": "under maintenance", "amenities": "AC" }
+    ],
+    "maintenanceRequests": [
+        { "id": 1, "room": 1, "status": "pending", "notes": "" },
+        { "id": 2, "room": 2, "status": "completed", "notes": "Fixed AC" },
+        { "id": 3, "room": 3, "status": "ongoing", "notes": "Fixing WiFi" }
+    ],
+    "alerts": [
+        { "id": 1, "message": "Room inspection due tomorrow" },
+        { "id": 2, "message": "Maintenance deadline for Room 3" },
+        { "id": 3, "message": "Urgent request from Room 2" }
+    ]
+}
